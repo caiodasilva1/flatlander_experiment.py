@@ -1,5 +1,7 @@
 # Ontological Control Systems (OCS) Framework
-
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hcXNEdmH7o-3Una4Xsh95D6OvFtS9Mt_)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 **A research framework exploring intrinsic AI safety through ontological tension minimization.**
 
 This repository contains the prototype implementation for the **Ontological Control Systems (OCS)** paradigm and the **τ-Veto mechanism**. Our work investigates a foundational shift in AI alignment: moving from external behavioral filters to embedding an intrinsic drive for multi-dimensional coherence within the agent itself.
