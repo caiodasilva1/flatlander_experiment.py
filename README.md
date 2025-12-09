@@ -1,4 +1,64 @@
-#  **Interactive Demo & Code:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aDoALuGF1dXO2xqKVmKW6gzpIX_xDpjM))
+# Ontological Control Systems (OCS) Framework
+
+**A research framework exploring intrinsic AI safety through ontological tension minimization.**
+
+This repository contains the prototype implementation for the **Ontological Control Systems (OCS)** paradigm and the **τ-Veto mechanism**. Our work investigates a foundational shift in AI alignment: moving from external behavioral filters to embedding an intrinsic drive for multi-dimensional coherence within the agent itself.
+
+🔗 **Interactive Prototype:** [Open the main notebook in Google Colab](https://colab.research.google.com/drive/1hcXNEdmH7o-3Una4Xsh95D6OvFtS9Mt_)
+
+## 🧠 Core Concept: From External Cages to Intrinsic Conscience
+
+Current AI safety approaches often act as brittle "cages" around a core optimizer that remains amoral. The OCS paradigm proposes a different path: an agent whose primary drive is to minimize its own **ontological tension (τ)**.
+
+This tension τ is a multi-dimensional vector quantifying:
+*   **Epistemic Tension:** Internal inconsistency, logical conflict, or uncertainty.
+*   **Social Tension:** Misalignment with norms, violation of values, or causing harm.
+*   **Physical Tension:** Impending system stress or violation of operational constraints.
+
+By minimizing τ, an OCS agent seeks stable, coherent states across all dimensions, forming the basis for a **computational conscience**. This repository provides the first open-source tools to instantiate and test this theory.
+
+## 🚀 Quick Start
+
+The fastest way to explore the core concepts is via our interactive Colab notebook. It requires no local setup.
+
+1.  **Open the Notebook:** Click the Google Colab link at the top of this README.
+2.  **Follow the Instructions:** The notebook is structured to guide you through:
+    *   The core `tau_framework.py` library.
+    *   Instantiating a τ-Veto head on a small language model.
+    *   Running simple experiments to see tension monitoring and veto mechanisms in action.
+
+For local development, clone this repository and install the dependencies listed in `requirements.txt`.
+
+## 📁 Repository Structure & Key Components
+
+**Core Framework**
+*   `tau_framework.py`: The central library defining the `TensionVector` and the logic for calculating and minimizing ontological tension (τ).
+*   `tau_veto_head.py`: A safety-layer class designed to wrap Hugging Face transformer models. It monitors token generation in real-time and can veto sequences that lead to high tension states.
+
+**Prototype Environments & Benchmarks**
+*   `moral_maze.py`: A custom multi-agent grid-world environment to benchmark cooperative behavior and social tension dynamics.
+*   `flatlander.py`: An environment for testing structured exploration and the management of epistemic vs. physical tension.
+*   `experiments/`: Contains scripts for running comparative benchmarks between OCS-guided agents and standard reward-maximizing baselines.
+
+**Getting Started & Examples**
+*   `ocs_framework_demo.ipynb`: The main Jupyter/Colab notebook serving as an interactive tutorial and entry point.
+*   `requirements.txt`: List of Python dependencies.
+
+## 🎯 Project Goals & Roadmap
+
+This work is the foundation for a formal research grant aimed at **scaling and rigorously validating the OCS approach for AI safety.**
+
+*   **Phase 1 (Scale):** Port and evaluate the τ-Veto mechanism on state-of-the-art 7B parameter language models using standardized safety benchmarks.
+*   **Phase 2 (Productize):** Refactor the core components into a clean, well-documented Python library (`ocs-safety`) to lower the barrier for community adoption and scrutiny.
+*   **Phase 3 (Collaborate):** Disseminate findings through a technical report and seek pilot evaluations with alignment teams.
+
+## 📄 License
+
+This research prototype is published under the **MIT License**. See the `LICENSE` file for details.
+
+---
+**Research by Caio Pereira.** This project is part of a proposal to the Long-Term Future Fund, focused on reducing existential risk from misaligned AI.)
+
 # Context-Aware Social AI: The "Sarcasm Detector" Benchmark
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
